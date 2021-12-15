@@ -1,0 +1,32 @@
+[
+    {
+        "firstName": "adri",
+        "lastName": "test",
+        "adress": "",
+        "emailAdress": "",
+        "radioGender": "f",
+        "checks": [
+            "Netflix"
+        ],
+        "selectCountries": "",
+        "selectYears": "2018",
+        "selectMonths": "Maio",
+        "pwd": "Ar160987"
+    },
+
+    {
+        "firstName": "adbenheri",
+        "lastName": "test",
+        "adress": "Aqui",
+        "emailAdress": "benhe@ele.com",
+        "radioGender": "m",
+        "checks": [
+            "Netflix",
+            "Livros"
+        ],
+        "selectCountries": "Portugal",
+        "selectYears": "201998",
+        "selectMonths": "Maio",
+        "pwd": "Ar160987"
+    }
+]

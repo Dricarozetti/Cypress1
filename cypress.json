@@ -1,0 +1,13 @@
+{
+
+     "$schema": "https://on.cypress.io/cypress.schema.json",
+     "reporter": "Cypress-multi-reporters",
+     "reporterOptions": {
+          "configFile": "reporter-config.json"
+
+
+
+     }
+
+     
+}
