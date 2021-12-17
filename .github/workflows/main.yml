@@ -1,7 +1,7 @@
 
 name: Testes
 
-# gatilhos dispara a execução dos meus testes
+# gatilhos dispara a execucao dos meus testes
 # programados
 # Acionados por eventos
 
@@ -21,7 +21,7 @@ jobs:
 # Download do codigo
     - uses: actions/checkout@v2
     
-# setup da versão do node 
+# setup da versao do node 
     - name: Use Node.js 
       uses: actions/setup-node@v2
       with:
@@ -35,7 +35,7 @@ jobs:
     
     - run: npm run report:mocha
     
-# Github Pages-> publicar o relatório
+# Github Pages-> publicar o relatorio
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@4.1.7
       with:
