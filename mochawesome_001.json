@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 1,
-    "start": "2022-01-03T22:46:47.527Z",
-    "end": "2022-01-03T22:46:49.765Z",
-    "duration": 2238,
+    "start": "2022-01-03T23:00:01.017Z",
+    "end": "2022-01-03T23:00:03.955Z",
+    "duration": 2938,
     "testsRegistered": 2,
     "passPercent": 50,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "777e53d3-313e-4871-bde4-e6d3db2a56bf",
+      "uuid": "4709fe85-d1e6-4656-a912-e74395734ce2",
       "title": "",
       "fullFile": "cypress/integration/listagem.spec.js",
       "file": "cypress/integration/listagem.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "99a8cbaf-9df6-4e97-b5b6-73e7017d1f2d",
+          "uuid": "3defe23c-0e28-4bf3-b01a-3d556c30865f",
           "title": "listagem",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Quando não houver cadastros, então a listagem deve estar vazia",
               "fullTitle": "listagem Quando não houver cadastros, então a listagem deve estar vazia",
               "timedOut": null,
-              "duration": 668,
+              "duration": 829,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.fixture('listagem-vazia').then(data => {\n  window.localStorage.setItem('data', JSON.stringify(data));\n});\ncy.visit('https://form-agilizei.netlify.app/listagem.html');\ncy.get('table tbody tr').should('have.length', 0);",
               "err": {},
-              "uuid": "be1e7a05-0e43-4884-b1b9-ef26752732f9",
-              "parentUUID": "99a8cbaf-9df6-4e97-b5b6-73e7017d1f2d",
+              "uuid": "6fa131d1-33b8-484e-8e0e-a74f44a06d18",
+              "parentUUID": "3defe23c-0e28-4bf3-b01a-3d556c30865f",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Quando houver um ou mais cadastros, então a listagem deve estar cada registro",
               "fullTitle": "listagem Quando houver um ou mais cadastros, então a listagem deve estar cada registro",
               "timedOut": null,
-              "duration": 250,
+              "duration": 373,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -69,22 +69,22 @@
                 "estack": "Error: A fixture file could not be found at any of the following paths:\n\n> cypress/fixtures/listagem-com-itens\n> cypress/fixtures/listagem-com-itens{{extension}}\n\nCypress looked for these file extensions at the provided path:\n\n> .json, .js, .coffee, .html, .txt, .csv, .png, .jpg, .jpeg, .gif, .tif, .tiff, .zip\n\nProvide a path to an existing fixture file.\n    at get (/home/runner/.cache/Cypress/8.7.0/Cypress/resources/app/packages/server/lib/errors.js:1035:15)\n    at Object.throwErr [as throw] (/home/runner/.cache/Cypress/8.7.0/Cypress/resources/app/packages/server/lib/errors.js:1053:9)\n    at Object.<anonymous> (/home/runner/.cache/Cypress/8.7.0/Cypress/resources/app/packages/server/lib/fixture.js:63:23)\n    at Object.tryCatcher (/home/runner/.cache/Cypress/8.7.0/Cypress/resources/app/packages/server/node_modules/bluebird/js/release/util.js:16:23)\n    at Promise._settlePromiseFromHandler (/home/runner/.cache/Cypress/8.7.0/Cypress/resources/app/packages/server/node_modules/bluebird/js/release/promise.js:547:31)\n    at Promise._settlePromise (/home/runner/.cache/Cypress/8.7.0/Cypress/resources/app/packages/server/node_modules/bluebird/js/release/promise.js:604:18)\n    at Promise._settlePromise0 (/home/runner/.cache/Cypress/8.7.0/Cypress/resources/app/packages/server/node_modules/bluebird/js/release/promise.js:649:10)\n    at Promise._settlePromises (/home/runner/.cache/Cypress/8.7.0/Cypress/resources/app/packages/server/node_modules/bluebird/js/release/promise.js:729:18)\n    at Promise._fulfill (/home/runner/.cache/Cypress/8.7.0/Cypress/resources/app/packages/server/node_modules/bluebird/js/release/promise.js:673:18)\n    at /home/runner/.cache/Cypress/8.7.0/Cypress/resources/app/packages/server/node_modules/bluebird/js/release/nodeback.js:42:21\n    at f (/home/runner/.cache/Cypress/8.7.0/Cypress/resources/app/packages/server/node_modules/once/once.js:25:25)\n    at Glob.<anonymous> (/home/runner/.cache/Cypress/8.7.0/Cypress/resources/app/packages/server/node_modules/glob/glob.js:151:7)\n    at Glob.emit (events.js:376:20)\n    at Glob._finish (/home/runner/.cache/Cypress/8.7.0/Cypress/resources/app/packages/server/node_modules/glob/glob.js:197:8)\n    at done (/home/runner/.cache/Cypress/8.7.0/Cypress/resources/app/packages/server/node_modules/glob/glob.js:182:14)\n    at Glob._processSimple2 (/home/runner/.cache/Cypress/8.7.0/Cypress/resources/app/packages/server/node_modules/glob/glob.js:688:12)\n    at /home/runner/.cache/Cypress/8.7.0/Cypress/resources/app/packages/server/node_modules/glob/glob.js:676:10\n    at Glob._stat2 (/home/runner/.cache/Cypress/8.7.0/Cypress/resources/app/packages/server/node_modules/glob/glob.js:772:12)\n    at lstatcb_ (/home/runner/.cache/Cypress/8.7.0/Cypress/resources/app/packages/server/node_modules/glob/glob.js:764:12)\n    at RES (/home/runner/.cache/Cypress/8.7.0/Cypress/resources/app/packages/server/node_modules/inflight/inflight.js:31:16)\n    at f (/home/runner/.cache/Cypress/8.7.0/Cypress/resources/app/packages/server/node_modules/once/once.js:25:25)\n    at callback (/home/runner/.cache/Cypress/8.7.0/Cypress/resources/app/packages/server/node_modules/graceful-fs/polyfills.js:289:20)\n    at FSReqCallback.oncomplete (fs.js:192:21)\n",
                 "diff": null
               },
-              "uuid": "b042a278-67ee-4e12-b2ec-cebc663e2d99",
-              "parentUUID": "99a8cbaf-9df6-4e97-b5b6-73e7017d1f2d",
+              "uuid": "639edc3b-3334-4f89-b940-388bd7d622b2",
+              "parentUUID": "3defe23c-0e28-4bf3-b01a-3d556c30865f",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "be1e7a05-0e43-4884-b1b9-ef26752732f9"
+            "6fa131d1-33b8-484e-8e0e-a74f44a06d18"
           ],
           "failures": [
-            "b042a278-67ee-4e12-b2ec-cebc663e2d99"
+            "639edc3b-3334-4f89-b940-388bd7d622b2"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 918,
+          "duration": 1202,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
